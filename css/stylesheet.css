@@ -1,0 +1,21 @@
+.hero-image {
+  background: url('../images/tiffany-detail.jpg') no-repeat center fixed;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 7rem;
+  left: 1rem;
+  text-align: left;
+  color: white;
+  font-size: 4rem;
+  line-height: 6.5rem;
+  font-family: 'EB Garamond', serif;
+}
+
+.container {
+  height: 500px;
+}
