@@ -1,3 +1,62 @@
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+.bg-dark {
+    background-color: #343a40!important;
+}
+
+.navbar {
+    display: flex;
+    text-align: right;
+    padding: .5rem 1rem;
+}
+
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.navbar-nav {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+.ml-auto, .mx-auto {
+    margin-right: auto!important;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 .hero-image {
   background: url('../images/tiffany-detail.jpg') no-repeat center fixed;
   background-size: cover;
@@ -7,7 +66,7 @@
 
 .hero-text {
   position: absolute;
-  top: 7rem;
+  top: 8.5rem;
   left: 1rem;
   text-align: left;
   color: white;
@@ -16,6 +75,50 @@
   font-family: 'EB Garamond', serif;
 }
 
-.container {
-  height: 500px;
+.about {
+  display: flex;
+  margin-right: -25px;
+  margin-left: -25px;
+  max-height: 500px;
+  padding: 1rem;
+}
+
+.about-image img {
+  position: relative;
+  max-width: 95%;
+  min-height: 1px;
+  padding-left: 15px;
+  align-content: flex-end;
+}
+
+
+.about-text {
+  position: relative;
+  max-width: 40%;
+  min-height: 1px;
+  margin-right: 25px;
+  font-family: 'EB Garamond', serif;
+}
+
+#h1 {
+  position: absolute;
+  top: 1rem;
+  text-align: left;
+  color: black;
+  font-size: 2rem;
+  line-height: 6.5rem;
+  font-family: 'EB Garamond', serif;
+}
+
+@media (min-width: 768px)
+.about-image img {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+@media (min-width: 768px)
+.about-text {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
 }
